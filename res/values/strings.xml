@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Osakidetza_Max</string>
+    <string name="bienvenida">Bienvenido/a a nuestros servicios</string>
+    <string name="selecciona">Selecciona una opción</string>
+    <string name="cita">Cita Previa</string>
+    <string name="btnReservar">Reserva tu cita Médica</string>
+    <string name="btnConsultar">Consultar Cita</string>
+    <string name="btnAnular">Anular Cita</string>
+    <string name="btnCitaTlf">Solicita tu cita por teléfono</string>
+    <string name="tis">Osakidetza - Identificacion con TIS para cita previa</string>
+    <string name="numTis">Num. Tis:</string>
+    <string name="fechaNac">Fecha nacimiento:(DD/MM/AAAA)</string>
+    <string name="aceptar">Aceptar</string>
+</resources>

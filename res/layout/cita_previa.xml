@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ADBECE"
+    >
+    
+    <TextView 
+        android:id="@+id/txtTituloCita"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cita"
+        android:textColor="#FFFFFF"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        android:background="@drawable/fondo_titulo"
+    />
+    
+    <ImageView
+        android:id="@+id/imgTitulo"
+        android:src="@drawable/osakidetzaicon" 
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"     
+        android:layout_alignParentLeft="true"
+    />
+    
+    <TextView 
+        android:id="@+id/txtTis"
+        android:layout_below="@id/imgTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/tis"
+        android:textColor="#000000"
+    />
+    
+    <TextView 
+        android:id="@+id/txtPedirTis"
+        android:layout_below="@id/txtTis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/numTis"
+        android:textColor="#000000"
+        android:textStyle="bold"
+    />
+    
+    <EditText 
+        android:id="@+id/inNumTis"
+        android:layout_below="@id/txtTis"
+        android:layout_alignBaseline="@id/txtPedirTis"
+        android:layout_toRightOf="@id/txtPedirTis"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+    />
+
+    <TextView 
+        android:id="@+id/txtPedirFecha"
+        android:layout_below="@id/txtPedirTis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/fechaNac"
+        android:textColor="#000000"
+    />
+    
+    <Spinner
+    	android:id="@+id/spinDia"
+    	android:layout_below="@id/txtPedirFecha"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:entries="@array/dias"    
+    />
+
+    <TextView 
+        android:id="@+id/slash1"
+        android:layout_below="@id/txtPedirFecha"
+        android:layout_toRightOf="@id/spinDia"
+        android:layout_alignBaseline="@id/spinDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        android:text="/"
+        android:textColor="#000000"
+    />
+   
+    <Spinner
+    	android:id="@+id/spinMes"
+    	android:layout_below="@id/txtPedirFecha"
+    	android:layout_toRightOf="@id/slash1"
+        android:layout_alignBaseline="@id/spinDia"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:entries="@array/meses"    
+    />
+    
+    <TextView 
+        android:id="@+id/slash2"
+        android:layout_below="@id/txtPedirFecha"
+        android:layout_toRightOf="@id/spinMes"
+        android:layout_alignBaseline="@id/spinDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        android:text="/"
+        android:textColor="#000000"
+    />
+    
+    <Spinner
+    	android:id="@+id/spinYear"
+    	android:layout_below="@id/txtPedirFecha"
+    	android:layout_toRightOf="@id/slash2"
+        android:layout_alignBaseline="@id/spinDia"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:entries="@array/years"   
+    />
+    
+    <Button 
+    	android:id="@+id/btnAceptar"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent"
+    	android:layout_below="@id/spinDia"   
+    	android:layout_margin="20dp"
+    	android:padding="5dp"
+    	android:text="@string/aceptar"
+    	android:textColor="#FFFFFF"
+    	android:textStyle="bold"
+    	android:textSize="12pt"    	
+    	android:background="@drawable/boton_aceptar"
+    />
+    
+    
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ADBECE"
+    >
+<TextView
+    android:id="@+id/txtBienvenida"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/bienvenida"
+    android:background="#212C4A"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    />
+
+<ImageView
+    android:id="@+id/logoOsakidetza"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/osakidetza_blanco"
+    android:layout_below="@id/txtBienvenida"
+    android:layout_alignParentLeft="true"
+    />
+
+<TextView
+    android:id="@+id/txtSelecciona"
+    android:layout_below="@id/logoOsakidetza"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="@string/selecciona"
+    android:textColor="#212C4A"
+    />
+
+<TextView
+    android:id="@+id/txtCita"
+    android:layout_below="@id/txtSelecciona"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="@string/cita"
+    android:textColor="#3F5F2E"
+    />
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtCita"
+    android:stretchColumns="0"
+    android:background="@drawable/table_shape"
+    >
+    <TableRow style="@style/tableRow" android:background="@drawable/first_row_shape"
+        android:id="@+id/tr1">
+        <ImageView
+            style="@style/imgRow"
+            android:id="@+id/imBtn1"            
+            android:src="@drawable/pedir_cita"
+            
+        />
+        <TextView
+            style="@style/botonRow"
+            android:id="@+id/btn1"
+            android:text="@string/btnReservar"
+        />
+    </TableRow>
+    <TableRow style="@style/tableRow" android:background="@drawable/inner_row_shape"
+    android:id="@+id/tr2">
+        <ImageView
+            style="@style/imgRow"
+            android:id="@+id/imBtn2"            
+            android:src="@drawable/consultar_cita"
+        />
+        <TextView
+            style="@style/botonRow"
+            android:id="@+id/btn2"
+            android:text="@string/btnAnular"
+        />
+    </TableRow>
+    <TableRow style="@style/tableRow" android:background="@drawable/inner_row_shape"
+    android:id="@+id/tr3">
+        <ImageView
+            style="@style/imgRow"
+            android:id="@+id/imBtn3"            
+            android:src="@drawable/anular_cita"
+        />
+        <TextView
+            style="@style/botonRow"
+            android:id="@+id/btn3"
+            android:text="@string/btnReservar"
+        />
+    </TableRow>
+   <TableRow style="@style/tableRow"
+        android:background="@drawable/last_row_shape"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/tr4">
+        <ImageView
+            style="@style/imgRow"
+            android:id="@+id/imBtn4"            
+            android:src="@drawable/telefono"
+        />
+        <TextView
+            style="@style/botonRow"
+            android:id="@+id/btn4"
+            android:text="@string/btnCitaTlf"
+        />
+    </TableRow>
+</TableLayout>
+</RelativeLayout>
