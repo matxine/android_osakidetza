@@ -5,6 +5,7 @@
 package packOsakidetza.Max;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -51,8 +52,10 @@ public class CitaPrevia extends Activity {
     	String mes = v_mes.getSelectedItem().toString();
     	String year = v_year.getSelectedItem().toString();
     	
-    	Toast t = Toast.makeText(this, "TIS: "+tis + "\n"+ dia +"/"+mes+"/"+year,Toast.LENGTH_SHORT);
-    	t.show();
+    	Intent in = new Intent(this, DatosCita.class);
+    	in.putExtra("Tis", tis);
+    	in.putExtra("FechaNac", dia +"/"+mes+"/"+year);
+    	startActivity(in);
     }
 }
 

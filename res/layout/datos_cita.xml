@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADBECE"
+    tools:context=".DatosCita" >
+
+     <TextView 
+        android:id="@+id/txtTituloCita"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cita"
+        android:textColor="#FFFFFF"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        android:background="@drawable/fondo_titulo"
+    />
+     
+    <TextView
+        android:id="@+id/datosParaCita"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+		android:background="@drawable/cuadro_datos"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:text="DATOS" />
+    
+    <TextView 
+        android:id="@+id/txtQueHacer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    
+    <Button 
+        android:id="@+id/btnPedir"
+        style="@style/boton"
+        android:text="@string/pedir"/>
+    
+    <Button 
+        android:id="@+id/btnConsultar"
+        style="@style/boton"
+        android:text="@string/consultar"/>
+
+</LinearLayout>

@@ -86,7 +86,7 @@
         <TextView
             style="@style/botonRow"
             android:id="@+id/btn3"
-            android:text="@string/btnReservar"
+            android:text="@string/btnConsultar"
         />
     </TableRow>
    <TableRow style="@style/tableRow"

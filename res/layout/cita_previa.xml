@@ -128,16 +128,9 @@
     
     <Button 
     	android:id="@+id/btnAceptar"
-    	android:layout_height="wrap_content"
-    	android:layout_width="fill_parent"
+    	style="@style/boton"
     	android:layout_below="@id/spinDia"   
-    	android:layout_margin="20dp"
-    	android:padding="5dp"
-    	android:text="@string/aceptar"
-    	android:textColor="#FFFFFF"
-    	android:textStyle="bold"
-    	android:textSize="12pt"    	
-    	android:background="@drawable/boton_aceptar"
+    	android:text="@string/aceptar"    	
     />
     
     
