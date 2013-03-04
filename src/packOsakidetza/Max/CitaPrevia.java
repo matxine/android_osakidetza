@@ -20,6 +20,9 @@ import android.widget.Toast;
  */
 public class CitaPrevia extends Activity {
 	
+	private int tis;
+	private String fechaNac;
+	
 	private Button bAceptar;
     /**
      * Called when the activity is first created.
@@ -47,15 +50,17 @@ public class CitaPrevia extends Activity {
     	Spinner v_mes = (Spinner)findViewById(R.id.spinMes);
     	Spinner v_year = (Spinner)findViewById(R.id.spinYear);
     	
-    	String tis = v_tis.getText().toString();
+    	tis = Integer.parseInt(v_tis.getText().toString());
     	String dia = v_dia.getSelectedItem().toString();
     	String mes = v_mes.getSelectedItem().toString();
     	String year = v_year.getSelectedItem().toString();
+    	fechaNac = dia +"/"+mes+"/"+year;
     	
     	Intent in = new Intent(this, DatosCita.class);
     	in.putExtra("Tis", tis);
-    	in.putExtra("FechaNac", dia +"/"+mes+"/"+year);
+    	in.putExtra("FechaNac", fechaNac);
     	startActivity(in);
     }
+
 }
 

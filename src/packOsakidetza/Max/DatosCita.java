@@ -3,6 +3,7 @@ package packOsakidetza.Max;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class DatosCita extends Activity {
@@ -22,6 +23,7 @@ public class DatosCita extends Activity {
 		fechaNac = in.getExtras().getString("FechaNac");
 		
 		textDatos = (TextView)findViewById(R.id.datosParaCita);
-		textDatos.setText(fechaNac);
-	}
+		textDatos.append("Fecha Nac :" + fechaNac + "\n");
+		textDatos.append("TIS :" + tis + "\n");
+	} 
 }

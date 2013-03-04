@@ -33,8 +33,29 @@
         android:id="@+id/txtQueHacer"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:paddingLeft="5dp"
         android:textColor="#000000"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:text="@string/que_desea" />
+    
+	<RadioGroup 
+	    android:id="@+id/rGroupCita"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+   	    <RadioButton 
+   	        android:id="@+id/radioMed"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:checked="true"
+   	        android:text="@string/medico"/>
+   	    
+   	    <RadioButton 
+   	        android:id="@+id/radioEnf"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:text="@string/enfermera"/>
+	</RadioGroup>
     
     <Button 
         android:id="@+id/btnPedir"

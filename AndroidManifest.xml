@@ -24,6 +24,10 @@
             android:name="packOsakidetza.Max.DatosCita"
             android:label="@string/title_activity_datos_cita" >
         </activity>
+        <activity
+            android:name="packOsakidetza.Max.PedirCita"
+            android:label="@string/title_activity_pedir_cita" >
+        </activity>
     </application>
-
+	<uses-sdk android:minSdkVersion="11" />
 </manifest>

@@ -16,8 +16,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_datos_cita">Datos Cita</string>
-    <string name="que_desea">¿Qué desea usted hacer?</string>
-    <string name="pedir">Pedir una nueva cita</string>
+    <string name="que_desea">Puede pedir una cita con...</string>
+    <string name="medico">su médico</string>
+    <string name="enfermera">su enfermera/o</string>
+    <string name="pedir">Pedir cita</string>
     <string name="consultar">Consultar o anular mis citas</string>
+    <string name="title_activity_pedir_cita">PedirCita</string>
 
 </resources>
